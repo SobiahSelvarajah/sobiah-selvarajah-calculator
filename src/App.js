@@ -1,9 +1,11 @@
+import React from 'react';
+import Calc from './components/calc/Calc';
 import './App.scss';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      hello
+    <div className='app__container'>
+      <Calc />
     </div>
   );
 }
