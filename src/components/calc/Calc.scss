@@ -1,0 +1,15 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.calc {
+    &__wrapper {
+        margin-top: 14rem;
+        width: 200px;
+    }
+    &__row {
+        display: flex;
+        flex-direction: row;
+    }
+}

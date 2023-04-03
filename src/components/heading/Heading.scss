@@ -1,0 +1,12 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.heading {
+    &__text {
+        color: $white;
+        margin: 0;
+        font-family: 'Lato Black';
+    }
+}

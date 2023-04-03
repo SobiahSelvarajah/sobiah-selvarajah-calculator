@@ -8,5 +8,8 @@
         background: rgb(9,27,36);
         background: linear-gradient(47deg, rgba(9,27,36,1) 24%, rgba(1,73,112,1) 61%, rgba(16,163,205,1) 85%);
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }

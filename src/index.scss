@@ -23,6 +23,7 @@ h1 {
   color: $white;
   margin: 0;
   font-family: 'Lato Black';
+  text-align: center;
   @include tablet {
     font-size: $h1_text_size_dt;
     line-height: $h1_line_height_dt;

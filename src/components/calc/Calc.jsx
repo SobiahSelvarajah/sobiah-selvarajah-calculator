@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../button/Button';
+import './Calc.scss';
 
 const Calc = () => {
   return (
