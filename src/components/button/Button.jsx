@@ -1,9 +1,14 @@
 import React from 'react';
 import './Button.scss';
 
-const Button = ({char}) => {
+const Button = ({ char,handleClick }) => {
   return (
-    <button className='button__wrapper'>{char}</button>
+    <button
+      className='button__wrapper'
+      onClick={() => handleClick(char)}
+    >
+      {char}
+    </button>
   )
 }
 

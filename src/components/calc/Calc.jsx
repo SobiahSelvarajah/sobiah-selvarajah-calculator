@@ -6,36 +6,40 @@ import './Calc.scss';
 
 const Calc = () => {
 
-    const [input, setInput] = useState("hi");
-    const [output, setOutput] = useState("bye");
+    const [input, setInput] = useState("");
+    const [output, setOutput] = useState("");
+
+    const handleOutput = (value) => {
+        setInput((input) => [...input, value + " "]);
+    };
 
   return (
     <main className='calc__wrapper'>
         <Screen input={input} output={output}/>
         <ClearButtons />
         <div className='calc__row'>
-            <Button char="7"/>
-            <Button char="8"/>
-            <Button char="9"/>
-            <Button char="/"/>
+            <Button char="7" handleClick={handleOutput}/>
+            <Button char="8" handleClick={handleOutput}/>
+            <Button char="9" handleClick={handleOutput}/>
+            <Button char="/" handleClick={handleOutput}/>
         </div>
         <div className='calc__row'>
-            <Button char="4"/>
-            <Button char="5"/>
-            <Button char="6"/>
-            <Button char="x"/>
+            <Button char="4" handleClick={handleOutput}/>
+            <Button char="5" handleClick={handleOutput}/>
+            <Button char="6" handleClick={handleOutput}/>
+            <Button char="x" handleClick={handleOutput}/>
         </div>
         <div className='calc__row'>
-            <Button char="1"/>
-            <Button char="2"/>
-            <Button char="3"/>
-            <Button char="+"/>
+            <Button char="1" handleClick={handleOutput}/>
+            <Button char="2" handleClick={handleOutput}/>
+            <Button char="3" handleClick={handleOutput}/>
+            <Button char="+" handleClick={handleOutput}/>
         </div>
         <div className='calc__row'>
-            <Button char="0"/>
-            <Button char="."/>
-            <Button char="="/>
-            <Button char="-"/>
+            <Button char="0" handleClick={handleOutput}/>
+            <Button char="." handleClick={handleOutput}/>
+            <Button char="=" handleClick={handleOutput}/>
+            <Button char="-" handleClick={handleOutput}/>
         </div>
     </main>
   )
