@@ -11,14 +11,14 @@
         border-top-left-radius: 20px;
     }
     &__outputText,
-    &__calculationText {
+    &__inputText {
         font-family: 'Lato Regular';
         padding: 15px;
         @include tablet {
             padding: 25px;
         }
     }
-    &__calculationText {
+    &__inputText {
         text-align: end;
     }
 }

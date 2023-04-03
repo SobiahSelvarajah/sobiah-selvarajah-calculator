@@ -3,18 +3,19 @@
 @use '../../partials/textstyles' as *;
 @use '../../partials/typeface' as *;
 
-.button {
+.clearButtons {
     &__wrapper {
-        margin: 4px;
-        height: 4em;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        flex: 3 1;
-        border-radius: 10px;
+        flex-direction: row;
+        background-color: $charcoal;
+    }
+    &__ac,
+    &__clear {
+        width: 50%;
+        height: 4em;
+        margin: 5px;
         background: linear-gradient(135deg, rgba(0,0,0,0.22), rgba(255,255,255,0.25));
+        border-radius: 10px;
         color: $white;
-        font-family: 'Lato Black';
-        font-size: $h4_text_size_m;
     }
 }

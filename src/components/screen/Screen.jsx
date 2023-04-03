@@ -1,17 +1,17 @@
 import React from 'react';
 import './Screen.scss';
 
-const Screen = () => {
+const Screen = ({ input, output }) => {
   return (
     <div className='screen__wrapper'>
         <section className='screen__output'>
             <h1 className='screen__outputText'>
-                Hello
+                {output}
             </h1>
         </section>
-        <section className='screen__calculation'>
-            <h4 className='screen__calculationText'>
-                It's me
+        <section className='screen__input'>
+            <h4 className='screen__inputText'>
+                {input}
             </h4>
         </section>
     </div>

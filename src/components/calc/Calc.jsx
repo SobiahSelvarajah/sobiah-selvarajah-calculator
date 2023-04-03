@@ -1,12 +1,18 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Screen from '../screen/Screen';
+import ClearButtons from '../clearButtons/ClearButtons';
 import Button from '../button/Button';
 import './Calc.scss';
 
 const Calc = () => {
+
+    const [input, setInput] = useState("hi");
+    const [output, setOutput] = useState("bye");
+
   return (
     <main className='calc__wrapper'>
-        <Screen />
+        <Screen input={input} output={output}/>
+        <ClearButtons />
         <div className='calc__row'>
             <Button char="7"/>
             <Button char="8"/>
@@ -31,7 +37,6 @@ const Calc = () => {
             <Button char="="/>
             <Button char="-"/>
         </div>
-        <button className='calc__clear'>Clear</button>
     </main>
   )
 }
