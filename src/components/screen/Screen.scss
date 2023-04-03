@@ -1,0 +1,22 @@
+@use '../../partials/breakpoints' as *;
+@use '../../partials/colors' as *;
+@use '../../partials/textstyles' as *;
+@use '../../partials/typeface' as *;
+
+.screen {
+    &__wrapper {
+        background-color: $charcoal;
+        color: $white;
+    }
+    &__outputText,
+    &__calculationText {
+        font-family: 'Lato Regular';
+        padding: 15px;
+        @include tablet {
+            padding: 25px;
+        }
+    }
+    &__calculationText {
+        text-align: end;
+    }
+}

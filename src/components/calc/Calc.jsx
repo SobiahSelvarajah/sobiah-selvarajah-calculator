@@ -1,10 +1,12 @@
 import React from 'react';
+import Screen from '../screen/Screen';
 import Button from '../button/Button';
 import './Calc.scss';
 
 const Calc = () => {
   return (
     <main className='calc__wrapper'>
+        <Screen />
         <div className='calc__row'>
             <Button char="7"/>
             <Button char="8"/>

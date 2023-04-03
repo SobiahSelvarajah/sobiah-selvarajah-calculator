@@ -20,10 +20,6 @@ code {
 h1 {
   font-size: $h1_text_size_m;
   line-height: $h1_line_height_m;
-  color: $white;
-  margin: 0;
-  font-family: 'Lato Black';
-  text-align: center;
   @include tablet {
     font-size: $h1_text_size_dt;
     line-height: $h1_line_height_dt;
@@ -65,4 +61,8 @@ h5 {
     font-size: $h5_text_size_dt;
     line-height: $h5_line_height_dt;
   }
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
 }

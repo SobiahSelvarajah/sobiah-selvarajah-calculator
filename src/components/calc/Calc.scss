@@ -5,8 +5,11 @@
 
 .calc {
     &__wrapper {
-        margin-top: 14rem;
+        margin-top: 8rem;
         width: 200px;
+        @include tablet {
+            width: 300px;
+        }
     }
     &__row {
         display: flex;
