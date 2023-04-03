@@ -1,3 +1,8 @@
+@use './partials/breakpoints' as *;
+@use './partials/colors' as *;
+@use './partials/textstyles' as *;
+@use './partials/typeface' as *;
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +15,53 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+h1 {
+  font-size: $h1_text_size_m;
+  line-height: $h1_line_height_m;
+  color: $white;
+  margin: 0;
+  font-family: 'Lato Black';
+  @include tablet {
+    font-size: $h1_text_size_dt;
+    line-height: $h1_line_height_dt;
+  }
+}
+
+h2 {
+  font-size: $h2_text_size_m;
+  line-height: $h2_line_height_m;
+  @include tablet {
+    font-size: $h2_text_size_dt;
+    line-height: $h2_line_height_dt;
+  }
+}
+
+h3 {
+  font-size: $h3_text_size_m;
+  line-height: $h3_line_height_m;
+  @include tablet {
+    font-size: $h3_text_size_dt;
+    line-height: $h3_line_height_dt;
+  }
+}
+
+h4 {
+  font-size: $h4_text_size_m;
+  line-height: $h4_line_height_m;
+  @include tablet {
+    font-size: $h4_text_size_dt;
+    line-height: $h4_line_height_dt;
+  }
+  
+}
+
+h5 {
+  font-size: $h5_text_size_m;
+  line-height: $h5_line_height_m;
+  @include tablet {
+    font-size: $h5_text_size_dt;
+    line-height: $h5_line_height_dt;
+  }
 }
