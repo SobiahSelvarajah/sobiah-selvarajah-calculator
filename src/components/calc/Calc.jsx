@@ -31,6 +31,7 @@ const Calc = () => {
             <Button char="="/>
             <Button char="-"/>
         </div>
+        <button className='calc__clear'>Clear</button>
     </main>
   )
 }
