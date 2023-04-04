@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Screen from '../screen/Screen';
 import ClearButtons from '../clearButtons/ClearButtons';
-import Button from '../button/Button';
+import EachButton from '../eachButton/EachButton';
 import './Calc.scss';
 
 const Calc = () => {
@@ -13,33 +13,42 @@ const Calc = () => {
         setInput((input) => [...input, value + " "]);
     };
 
+    const clearFunc = () => {
+        setInput("");
+        setOutput("");
+    };
+
+    const cFunc = () => {
+        setInput(input.slice(0, input.length - 1));
+    };
+
   return (
     <main className='calc__wrapper'>
         <Screen input={input} output={output}/>
-        <ClearButtons />
+        <ClearButtons handleClear={clearFunc} handleC={cFunc}/>
         <div className='calc__row'>
-            <Button char="7" handleClick={handleOutput}/>
-            <Button char="8" handleClick={handleOutput}/>
-            <Button char="9" handleClick={handleOutput}/>
-            <Button char="/" handleClick={handleOutput}/>
+            <EachButton char="7" handleClick={handleOutput}/>
+            <EachButton char="8" handleClick={handleOutput}/>
+            <EachButton char="9" handleClick={handleOutput}/>
+            <EachButton char="/" handleClick={handleOutput}/>
         </div>
         <div className='calc__row'>
-            <Button char="4" handleClick={handleOutput}/>
-            <Button char="5" handleClick={handleOutput}/>
-            <Button char="6" handleClick={handleOutput}/>
-            <Button char="x" handleClick={handleOutput}/>
+            <EachButton char="4" handleClick={handleOutput}/>
+            <EachButton char="5" handleClick={handleOutput}/>
+            <EachButton char="6" handleClick={handleOutput}/>
+            <EachButton char="x" handleClick={handleOutput}/>
         </div>
         <div className='calc__row'>
-            <Button char="1" handleClick={handleOutput}/>
-            <Button char="2" handleClick={handleOutput}/>
-            <Button char="3" handleClick={handleOutput}/>
-            <Button char="+" handleClick={handleOutput}/>
+            <EachButton char="1" handleClick={handleOutput}/>
+            <EachButton char="2" handleClick={handleOutput}/>
+            <EachButton char="3" handleClick={handleOutput}/>
+            <EachButton char="+" handleClick={handleOutput}/>
         </div>
         <div className='calc__row'>
-            <Button char="0" handleClick={handleOutput}/>
-            <Button char="." handleClick={handleOutput}/>
-            <Button char="=" handleClick={handleOutput}/>
-            <Button char="-" handleClick={handleOutput}/>
+            <EachButton char="0" handleClick={handleOutput}/>
+            <EachButton char="." handleClick={handleOutput}/>
+            <EachButton char="=" handleClick={handleOutput}/>
+            <EachButton char="-" handleClick={handleOutput}/>
         </div>
     </main>
   )
