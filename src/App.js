@@ -10,6 +10,6 @@ const App = () => {
       <Calc />
     </section>
   );
-}
+};
 
 export default App;

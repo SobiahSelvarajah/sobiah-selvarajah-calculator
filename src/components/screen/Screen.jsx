@@ -1,7 +1,7 @@
 import React from 'react';
 import './Screen.scss';
 
-const Screen = ({ input, output }) => {
+export default function Screen ({ input, output }) {
   return (
     <div className='screen__wrapper'>
         <section className='screen__output'>
@@ -15,7 +15,5 @@ const Screen = ({ input, output }) => {
             </h4>
         </section>
     </div>
-  )
-}
-
-export default Screen;
+  );
+};

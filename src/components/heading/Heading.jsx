@@ -1,12 +1,10 @@
 import React from 'react';
 import './Heading.scss';
 
-const Heading = () => {
+export default function Heading () {
   return (
     <h1 className='heading__text'>
-        Basic Calculator
+      Basic Calculator
     </h1>
-  )
-}
-
-export default Heading
+  );
+};

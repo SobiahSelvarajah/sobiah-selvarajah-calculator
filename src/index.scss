@@ -1,7 +1,5 @@
 @use './partials/breakpoints' as *;
-@use './partials/colors' as *;
 @use './partials/textstyles' as *;
-@use './partials/typeface' as *;
 
 body {
   margin: 0;
@@ -11,7 +9,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -25,7 +22,6 @@ h1 {
     line-height: $h1_line_height_dt;
   }
 }
-
 h2 {
   font-size: $h2_text_size_m;
   line-height: $h2_line_height_m;
@@ -34,7 +30,6 @@ h2 {
     line-height: $h2_line_height_dt;
   }
 }
-
 h3 {
   font-size: $h3_text_size_m;
   line-height: $h3_line_height_m;
@@ -43,7 +38,6 @@ h3 {
     line-height: $h3_line_height_dt;
   }
 }
-
 h4 {
   font-size: $h4_text_size_m;
   line-height: $h4_line_height_m;
@@ -51,9 +45,7 @@ h4 {
     font-size: $h4_text_size_dt;
     line-height: $h4_line_height_dt;
   }
-  
 }
-
 h5 {
   font-size: $h5_text_size_m;
   line-height: $h5_line_height_m;
@@ -62,7 +54,6 @@ h5 {
     line-height: $h5_line_height_dt;
   }
 }
-
 h1, h2, h3, h4, h5 {
   margin: 0;
 }

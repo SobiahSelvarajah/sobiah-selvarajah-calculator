@@ -1,1 +1,3 @@
-# sobiah-selvarajah-calculator
+# Calculator
+
+A basic calculator built with javascript.

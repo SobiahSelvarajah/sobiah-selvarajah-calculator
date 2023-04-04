@@ -51,7 +51,7 @@ const Calc = () => {
             <EachButton char="-" handleClick={handleOutput}/>
         </div>
     </main>
-  )
-}
+  );
+};
 
 export default Calc;

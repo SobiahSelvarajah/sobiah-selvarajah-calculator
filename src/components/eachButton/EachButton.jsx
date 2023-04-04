@@ -1,7 +1,7 @@
 import React from 'react';
 import './EachButton.scss';
 
-const EachButton = ({ char,handleClick }) => {
+export default function EachButton ({ char, handleClick }) {
   return (
     <button
       className='eachButton__wrapper'
@@ -9,7 +9,5 @@ const EachButton = ({ char,handleClick }) => {
     >
       {char}
     </button>
-  )
-}
-
-export default EachButton;
+  );
+};
